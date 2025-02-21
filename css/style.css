@@ -47,6 +47,7 @@ header {
     text-transform: uppercase;
     width: 60%;
     margin: auto;
+    cursor: pointer;
    
    
 }
@@ -174,3 +175,7 @@ footer {
   }
 
   
+.checkout-main {
+ width: 50em;
+ margin: auto;
+}
