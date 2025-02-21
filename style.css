@@ -1,0 +1,176 @@
+/* Global */
+
+body {
+    font-family: 'Din Condensed', Arial, Helvetica, sans-serif;
+    background-color: #C4CFD1;
+}
+
+h1, h2 {
+    font-family: 'Din Alternate';
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    background-color: #C4CFD1;
+    padding:15px 0px 0px 0px;
+}
+
+
+.logo-container {
+    text-align: center;
+    padding-top: 0px
+} 
+
+
+.logo {
+    text-decoration: none;
+    color: #0A3641;
+    font-size: 2.7em;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+.add-to-cart {
+    background-color: #0A3641;
+    color: #fff;
+    padding: 0.5em 1em;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    width: 60%;
+    margin: auto;
+   
+   
+}
+
+.add-to-cart:hover, .cta:hover, .complete-order-cta:hover {
+    background-color: #56747C;
+
+}
+
+main {
+    margin: 15px;
+}
+
+input, textarea {
+    border: 1px solid #C4CFD1;
+    border-radius: 5px;
+    margin: 10px 10px 10px 0px;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: #56747C;
+    padding: 80px;
+    color: #fff;
+}
+
+
+.cart-icon {
+    position: absolute;
+    top: 20px; 
+    right: 20px; 
+    z-index: 100; 
+    display: inline-block;
+    margin-right: 1em;
+    margin-top: 1em;
+  }
+  
+  .cart-icon img {
+    width: 3em; 
+    cursor: pointer;
+    margin-bottom: 0;
+  }
+  
+  #cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #222652;
+    color: white;
+    border-radius: 40%;
+    padding: 0.1em 0.3em;
+    font-size: 1em;
+  }
+  
+  .products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    margin: 0.7em 0em;
+  }
+
+
+  .product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    margin: 0em 0.4em;
+  }
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+
+  .product-card img {
+    width: 100%;
+    max-width: 11em;
+    height: 13em;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-left: 2em;
+    margin-top: 1em;
+
+  }
+
+  .product-card h2 {
+    font-size: 1.5em;
+    margin: 20px;
+  }
+
+  .product-card p {
+    font-size: 1.3em;
+    color: #777;
+    margin: 0 15px 15px;
+  }
+
+  .product-card a {
+    color: #17162a;
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+    font-size: 1.2em;
+  }
+
+  .price {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 15px;
+    color: #4caf50;
+  }
+
+  .product-card button {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #0A3641;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  

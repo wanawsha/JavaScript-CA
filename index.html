@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Explore stylish and durable raincoats for men and women. Stay dry and comfortable in all weather with our range of waterproof jackets.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <section class="logo-container">
+            <p><a href="index.html" class="logo">Shopping</a></p>
+        </section>
+        <section class="cart-icon">
+            <a href="./checkout.html">
+                <img src="../images/cart.png" alt="Cart">
+                <div id="cart">
+                    <span id="cart-count">0</span>
+                  </div>
+            </a>
+        </section>
+    </header>
+    <main>
+        <h1>Products</h1>
+        <div class="filter-container">
+            <label for="gender-filter">Filter by gender:</label>
+            <select id="gender-filter" onchange="handleFilterChange()">
+              <option value="all">All</option>
+              <option value="Female">Women's Jackets</option>
+              <option value="Male">Men's Jackets</option>
+            </select>
+          </div>
+      
+        <div class="products-container">
+                <!-- <div class="product-img">
+                    <img src="./images/jacket-blue.png" alt="Blue Jacket">
+                </div>
+                <div class="product-details">
+                    <h2>Jacket 1</h2>
+                    <h2><small>$</small>60</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, eveniet.</p>
+                </div>
+                <div class="add-to-cart">Add to cart</div> -->
+            </div> 
+        </div> 
+            
+    </main>
+    <footer>
+        Copyright &copy; 2024 Rainy Days
+    </footer>
+    <script type="module" src="./products.js"></script>
+    <script type="module" src="./script.js"></script>
+
+</body>
+</html>
