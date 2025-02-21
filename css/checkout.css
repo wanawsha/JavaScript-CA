@@ -1,0 +1,96 @@
+@import url("/css/style.css");
+
+body {
+    text-transform: uppercase;
+}
+.checkout-details {
+    display: grid; 
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 20px 40px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.form {
+    background-color: #fff;
+    border-radius: 5px;
+    text-transform: uppercase;
+
+}
+
+
+.in-cart {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    background-color: #fff;
+    max-height: 200px;
+    border-radius: 5px;
+}
+
+
+.in-cart img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin: 15px;
+    width: 100%;
+    height: auto;
+    max-width: 80px;
+}
+
+
+.in-cart p {
+    
+    font-size: 1.4em;
+    grid-column: 2 / 3;
+}
+
+
+.shipping-address, .card-details, .personal-details {
+    margin: 10px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-details {
+    margin-bottom: 30px;
+}
+
+#total-price {
+    text-align: right;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin: 20px 0px;
+}
+
+#selected-jacket {
+    max-width: 100px;
+    margin: auto;
+    text-align: left;
+    
+}
+
+#price {
+    margin-top: 40px;
+    margin-left: 50px;
+    font-size: 2em;
+    grid-column: 4 / 5;
+    text-align: center;
+}
+
+
+.complete-order-cta {
+    background-color: #0A3641;
+    color: #fff;
+    display: block;
+    max-width: 140px;
+    text-align: center;
+    font-size: 1.4em;
+    padding: 12px 80px;
+    text-transform: uppercase;
+    margin: 30px auto;
+    border-radius: 5px;
+    
+}
