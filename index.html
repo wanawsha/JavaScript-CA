@@ -10,7 +10,7 @@
 <body>
     <header>
         <section class="logo-container">
-            <p><a href="index.html" class="logo">Shopping</a></p>
+            <p><a href="index.html" class="logo">RAINY DAYS</a></p>
         </section>
         <section class="cart-icon">
             <a href="./checkout.html">
@@ -22,15 +22,15 @@
         </section>
     </header>
     <main>
-        <h1>Products</h1>
+        <h1 class="home-h1">Products</h1>
         <div class="filter-container">
             <label for="gender-filter">Filter by gender:</label>
-            <select id="gender-filter" onchange="handleFilterChange()">
-              <option value="all">All</option>
-              <option value="Female">Women's Jackets</option>
-              <option value="Male">Men's Jackets</option>
+            <select id="gender-filter">
+                <option value="all">All</option>
+                <option value="female">Women's Jackets</option>
+                <option value="male">Men's Jackets</option>
             </select>
-          </div>
+        </div>
       
         <div class="products-container">
                 <!-- <div class="product-img">
@@ -52,6 +52,8 @@
     </footer>
     <script type="module" src="./products.js"></script>
     <script type="module" src="./script.js"></script>
+    <script type="module" src="./checkout.js"></script>
+
 
 </body>
 </html>

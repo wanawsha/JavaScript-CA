@@ -3,6 +3,9 @@
 body {
     text-transform: uppercase;
 }
+
+
+
 .checkout-details {
     display: grid; 
     grid-template-columns: 1fr;
@@ -16,6 +19,8 @@ body {
     background-color: #fff;
     border-radius: 5px;
     text-transform: uppercase;
+    margin-bottom: 2em;
+
 
 }
 
@@ -23,7 +28,7 @@ body {
 .in-cart {
     margin-top: 30px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     background-color: #fff;
     max-height: 200px;
@@ -42,10 +47,11 @@ body {
 
 
 .in-cart p {
-    
-    font-size: 1.4em;
+    font-size: 1.5em;
     grid-column: 2 / 3;
 }
+
+
 
 
 .shipping-address, .card-details, .personal-details {
@@ -90,7 +96,33 @@ body {
     font-size: 1.4em;
     padding: 12px 80px;
     text-transform: uppercase;
-    margin: 30px auto;
+    margin: auto;
     border-radius: 5px;
     
 }
+
+
+.remove-item {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5em;
+    margin-top: 3em;
+    height: 40%;
+}
+
+
+.continue-shopping {
+    background-color: #0A3641;
+    color: #FFF;
+    padding: 1em 2em;
+    font-size: 1.2em;
+    border-radius: 0.5em;
+    display: inline-block;
+    
+}
+
+

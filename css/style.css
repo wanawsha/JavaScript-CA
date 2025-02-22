@@ -179,3 +179,23 @@ footer {
  width: 50em;
  margin: auto;
 }
+
+
+.filter-container {
+  margin: 1em 0em 2em 2.5em;
+  text-transform: uppercase;}
+
+.home-h1 {
+  margin-left: 1.3em;
+}
+
+
+#gender-filter {
+  background-color: #4d7782;
+  color: #fff;
+  padding: 0.5em 0.7em;
+  border-radius: 0.5em;
+  margin-left: 0.5em;
+  font-size: 0.7em;
+  text-transform: uppercase;
+}
