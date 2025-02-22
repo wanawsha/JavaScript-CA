@@ -1,5 +1,4 @@
 
-
 //Script.js
 const productsContainer = document.querySelector(".products-container");
 const cartCount = document.getElementById('cart-count');
@@ -48,8 +47,7 @@ function showProducts(productsToShow) {
                 <p>$${product.price}</p>
                 <button class="add-to-cart" data-id="${product.id}">Add to cart</button>
                 <a href="product-details.html?id=${product.id}">VIEW DETAILS</a>
-            </div>
-        `;
+            </div>`;
     });
 
     document.querySelectorAll('.add-to-cart').forEach(button => {
@@ -69,6 +67,8 @@ function showProducts(productsToShow) {
     hideLoading();
 }
 
+
+
 async function fetchSingleProduct(id) {
     try {
         const response = await fetch(`https://api.noroff.dev/api/v1/rainy-days/${id}`);
@@ -77,6 +77,9 @@ async function fetchSingleProduct(id) {
         console.error("Error fetching product details:", error);
     }
 }
+
+
+
 
 function filterProducts() {
     showLoading();
@@ -121,5 +124,6 @@ updateCartCount();
 if (filterContainer) {
     filterContainer.addEventListener('change', filterProducts);
 }
+
 
 

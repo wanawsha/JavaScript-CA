@@ -1,5 +1,5 @@
 // product-details.js
-// product-details.js
+
 import { addToCart } from './script.js';
 
 const productDetailsContainer = document.getElementById('product-details');
@@ -27,12 +27,20 @@ function getProductDetails(id) {
 function displayProductDetails(product) {
     if (!productDetailsContainer) return;
 
+    const sizeOptions = product.sizes
+    ? product.sizes.map(size => `<option value="${size}">${size}</option>`).join('')
+    : '<option value="N/A">N/A</option>';
+
+
     productDetailsContainer.innerHTML = `
         <img src="${product.image}" alt="${product.title}">
         <div class="product-details-text">
             <h1>${product.title}</h1>
             <p>${product.description}</p>
             <p class="price"><strong>Price:</strong> $${product.price}</p>
+            <p><strong>Available Sizes:</strong> ${product.sizes?.join(", ") || 'N/A'}</p>
+      <label for="size-select"><strong>SELECT SIZE:</strong></label>
+      <select id="size-select">${sizeOptions}</select>
             <button class="add-to-cart" data-id="${product.id}">Add to Cart</button>
         </div>
        
