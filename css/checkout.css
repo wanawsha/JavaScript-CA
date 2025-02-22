@@ -39,10 +39,10 @@ body {
 .in-cart img {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    margin: 15px;
+    margin: auto 3em;
     width: 100%;
     height: auto;
-    max-width: 80px;
+    max-width: 100px;
 }
 
 
@@ -109,11 +109,15 @@ body {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-right: 5em;
-    margin-top: 3em;
-    height: 40%;
+    /* margin-right: 5em;
+    margin-top: 3em; */
+    margin: auto 5em auto 3em;
+    height: 4em;
 }
 
+.item-price {
+    color: #0505059e;
+}
 
 .continue-shopping {
     background-color: #0A3641;
