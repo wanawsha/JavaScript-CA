@@ -5,7 +5,7 @@ body {
 }
 
 
-.form {
+#form {
     background-color: #fff;
     border-radius: 5px;
     text-transform: uppercase;
@@ -58,7 +58,7 @@ body {
 }
 
 
-.complete-order-cta {
+#complete-order-cta {
     background-color: #0A3641;
     color: #fff;
     display: block;
@@ -69,6 +69,7 @@ body {
     text-transform: uppercase;
     margin: auto;
     border-radius: 5px;
+    cursor: pointer;
     
 }
 
@@ -101,14 +102,25 @@ body {
 }
 
 .continue-shopping {
-    background-color: #0A3641;
+    background: linear-gradient(180deg, #0A3641, #54808b) ;
     color: #fff;
     padding: 1em 1.7em;
     border-radius: 0.5em;
-    
+    font-size: 1.5em;   
 }
+
+.continue-shopping:hover {
+    background: linear-gradient(200deg, #20525e, #94b9c3) ;
+
+}
+
 
 .empty-cart h2 {
-    margin: 1em auto;
+    margin: 1em auto 2em auto;
+    font-size: 2em;
 }
 
+
+.empty-cart {
+    text-align: center;
+}

@@ -1,0 +1,27 @@
+main {
+    min-height: 50vh;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.order-confirmation {
+    border: 1px solid #0A3641;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #0A3641;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+.cta {
+    background-color: #0A3641;
+    color:#fff;
+    text-decoration: none;
+    padding: 10px 80px;
+    border-radius: 10px;
+    font-size: 1.4em;
+    text-transform: uppercase;
+}

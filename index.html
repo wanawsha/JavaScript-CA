@@ -8,6 +8,7 @@
     <title>Home</title>
 </head>
 <body>
+    <div  id="loading-indicator"></div>      
     <header>
         <section class="logo-container">
             <p><a href="index.html" class="logo">RAINY DAYS</a></p>
@@ -22,6 +23,15 @@
         </section>
     </header>
     <main>
+        <section class="new-arrivals">
+            <h1>New Arrivals!</h1>
+            <div class="new-arrivals-women">
+                <img src="./images/jacket-white.png" alt="White rain jacket for women">
+            </div>
+            <div class="new-arrivals-men">
+            <img src="./images/jacket-yellow-home.png" alt="Grey and yellow rain jacket for men" class="jacket-yellow">
+            </div>
+        </section>
         <h1 class="home-h1">Products</h1>
         <div class="filter-container">
             <label for="gender-filter">Filter by gender:</label>
@@ -44,15 +54,23 @@
                 <div class="add-to-cart">Add to cart</div> -->
             <!-- </div>  -->
         </div> 
-        
-            
+        <section class="about-us-home">
+            <img src="./images/about-us.jpg" alt="Woman wearing outerwear, hiking in snow-capped mountains">
+            <section class="about-us-content-home">
+                <h2>About Rainy Days</h2>
+                <ul>
+                    <li>High quality and durable outerwear</li>
+                    <li>Our jackets offer comfort, style and protection</li>
+                    <li>For hiking, camping or just enjoying nature</li>
+                </ul>
+            </section>    
     </main>
     <footer>
-        Copyright &copy; 2025 Rainy Days
+        Copyright &copy; 2025 Rainy Days 
     </footer>
-    <script type="module" src="./script.js"></script>
-    <script type="module" src="./checkout.js"></script>
-    <script type="module" src="./product-details.js"></script>
+    <script type="module" src="./js/script.js"></script>
+    <script type="module" src="./js/checkout.js"></script>
+    <script type="module" src="./js/product-details.js"></script>
 
 
 </body>

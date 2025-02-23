@@ -1,5 +1,6 @@
 
 //Script.js
+
 const productsContainer = document.querySelector(".products-container");
 const cartCount = document.getElementById('cart-count');
 const filterContainer = document.querySelector(".filter-container select");
@@ -7,30 +8,30 @@ const filterContainer = document.querySelector(".filter-container select");
 function showLoading() {
     const loadingIndicator = document.getElementById('loading-indicator');
     if (loadingIndicator) {
-        loadingIndicator.style.display = 'block';
+        loadingIndicator.style.display = 'block'; 
     }
 }
 
 function hideLoading() {
     const loadingIndicator = document.getElementById('loading-indicator');
     if (loadingIndicator) {
-        loadingIndicator.style.display = 'none';
+        loadingIndicator.style.display = 'none'; 
     }
 }
 
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
 export async function fetchProducts() {
-    showLoading();
+    showLoading(); 
+
     try {
         const response = await fetch('https://api.noroff.dev/api/v1/rainy-days');
         const products = await response.json();
-        showProducts(products);
+        return products;
     } catch (error) {
         console.error("Error fetching products:", error);
         productsContainer.innerHTML = `<p>Failed to load products. Please try again later.</p>`;
-    } finally {
-        hideLoading();
+        return [];
     }
 }
 
@@ -39,6 +40,12 @@ function showProducts(productsToShow) {
 
     productsContainer.innerHTML = ''; 
     
+    if (productsToShow.length === 0) {
+        productsContainer.innerHTML = `<p>No products found.</p>`;
+        hideLoading(); 
+        return;
+    }
+
     productsToShow.forEach((product) => {
         productsContainer.innerHTML += `
             <div class="product-item">
@@ -57,17 +64,8 @@ function showProducts(productsToShow) {
         });
     });
 
-    document.querySelectorAll('.view-details').forEach(button => {
-        button.addEventListener('click', () => {
-            const productId = button.getAttribute('data-id');
-            window.location.href = `product-details.html?id=${productId}`;  // Navigate to product details page
-        });
-    });
-    
-    hideLoading();
+    hideLoading(); 
 }
-
-
 
 async function fetchSingleProduct(id) {
     try {
@@ -78,11 +76,9 @@ async function fetchSingleProduct(id) {
     }
 }
 
-
-
-
 function filterProducts() {
-    showLoading();
+    showLoading(); 
+
     const selectedGender = filterContainer.value;
 
     fetchProducts().then(products => {
@@ -90,7 +86,7 @@ function filterProducts() {
             showProducts(products);
         } else {
             const filteredProducts = products.filter(product => 
-                product.gender === selectedGender
+                product.gender.toLowerCase() === selectedGender.toLowerCase()
             );
             showProducts(filteredProducts);
         }
@@ -118,12 +114,16 @@ export function updateCartCount() {
 }
 
 showLoading();
-fetchProducts();
+fetchProducts().then(products => {
+    showProducts(products);
+});
 updateCartCount();
 
 if (filterContainer) {
     filterContainer.addEventListener('change', filterProducts);
 }
+
+
 
 
 
