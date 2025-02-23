@@ -82,7 +82,7 @@ function filterProducts() {
     const selectedGender = filterContainer.value;
 
     fetchProducts().then(products => {
-        if (selectedGender === 'all') {
+        if (selectedGender === 'All') {
             showProducts(products);
         } else {
             const filteredProducts = products.filter(product => 
